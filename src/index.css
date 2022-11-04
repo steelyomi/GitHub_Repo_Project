@@ -1,13 +1,111 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 60%;
+  background: rgb(0,0,0);
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h3, h2{
+  text-align: center;
+}
+
+/* Home */
+.welcome {
+  margin: 10px, 0, 20px, 0;
+  line-height: 30px;
+  text-align: left;
+  font-size: 18px;
+}
+
+
+.loading {
+  text-align: center;
+  font-size: 200%;
+  height: 200px;
+  line-height: 200px;
+}
+
+/* Repositories */
+
+.user{
+  display: grid;
+  
+}
+
+.user > div {
+  background: rgb(152, 162, 172);
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    transition: all 300ms ease;
+}
+
+.user > div:hover {
+  background: rgb(54, 54, 53);
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  width: 4%;
+  border-bottom: none;
+}
+
+.repoList {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Repo */
+
+.repoPage{
+  margin-left: 20px;
+ 
+}
+
+.repoPage > a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Pagination */
+
+.pagination {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination_itm {
+  margin: 5px;
+}
+
+/* NavBar */
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(214, 212, 212);
+  padding: 0.4rem;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nav-link:hover {
+  color: rgb(170, 158, 142);
 }
